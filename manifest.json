@@ -1,0 +1,30 @@
+{
+	
+  "manifest_version": 3,
+  "name": "Templates",
+  "version": "0.95",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+  },
+  
+ "permissions" : [
+    "unlimitedStorage",
+    "clipboardWrite",
+    "storage",
+    "contextMenus"
+ ],
+ "web_accessible_resources": [
+    {
+      "resources": ["templates.json"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+    "action": {
+        "default_popup": "index.html"
+    }
+    
+
+
+}
